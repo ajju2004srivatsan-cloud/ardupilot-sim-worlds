@@ -1,0 +1,730 @@
+#VRML_V7.0.0 utf8
+WorldInfo {
+  title "Outdoor forest"
+  info [
+    "Same layout as the Python avoidance demo."
+  ]
+  basicTimeStep 32
+}
+Viewpoint {
+  orientation 1 0 0 -1.05
+  position 20.000 36.000 20.000
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Solid {
+  translation 20.000 0 20.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.55 0.66 0.34 }
+      }
+      geometry Box { size 40.000 0.04 40.000 }
+    }
+  ]
+  name "floor"
+  boundingObject Box { size 40.000 0.04 40.000 }
+}
+DEF GOAL Solid {
+  translation 36.000 0.04 36.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.15 0.65 0.25 }
+      }
+      geometry Cylinder { height 0.06 radius 0.35 }
+    }
+  ]
+  name "goal"
+}
+
+Solid {
+  translation 18.333 0 22.092
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.700 }
+        }
+      ]
+    }
+  ]
+  name "tree_0"
+  boundingObject Cylinder { height 4 radius 0.700 }
+}
+
+Solid {
+  translation 18.314 0 32.427
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.550 }
+        }
+      ]
+    }
+  ]
+  name "tree_1"
+  boundingObject Cylinder { height 4 radius 0.550 }
+}
+
+Solid {
+  translation 8.963 0 20.417
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.850 }
+        }
+      ]
+    }
+  ]
+  name "tree_2"
+  boundingObject Cylinder { height 4 radius 0.850 }
+}
+
+Solid {
+  translation 23.989 0 9.016
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.700 }
+        }
+      ]
+    }
+  ]
+  name "tree_3"
+  boundingObject Cylinder { height 4 radius 0.700 }
+}
+
+Solid {
+  translation 13.119 0 5.673
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.850 }
+        }
+      ]
+    }
+  ]
+  name "tree_4"
+  boundingObject Cylinder { height 4 radius 0.850 }
+}
+
+Solid {
+  translation 24.706 0 23.340
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.700 }
+        }
+      ]
+    }
+  ]
+  name "tree_5"
+  boundingObject Cylinder { height 4 radius 0.700 }
+}
+
+Solid {
+  translation 36.267 0 25.387
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.850 }
+        }
+      ]
+    }
+  ]
+  name "tree_6"
+  boundingObject Cylinder { height 4 radius 0.850 }
+}
+
+Solid {
+  translation 23.487 0 29.734
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.700 }
+        }
+      ]
+    }
+  ]
+  name "tree_7"
+  boundingObject Cylinder { height 4 radius 0.700 }
+}
+
+Solid {
+  translation 10.678 0 12.795
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.550 }
+        }
+      ]
+    }
+  ]
+  name "tree_8"
+  boundingObject Cylinder { height 4 radius 0.550 }
+}
+
+Solid {
+  translation 25.686 0 18.507
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.700 }
+        }
+      ]
+    }
+  ]
+  name "tree_9"
+  boundingObject Cylinder { height 4 radius 0.700 }
+}
+
+Solid {
+  translation 27.273 0 13.535
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.550 }
+        }
+      ]
+    }
+  ]
+  name "tree_10"
+  boundingObject Cylinder { height 4 radius 0.550 }
+}
+
+Solid {
+  translation 20.451 0 3.541
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.850 }
+        }
+      ]
+    }
+  ]
+  name "tree_11"
+  boundingObject Cylinder { height 4 radius 0.850 }
+}
+
+Solid {
+  translation 16.028 0 36.031
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.850 }
+        }
+      ]
+    }
+  ]
+  name "tree_12"
+  boundingObject Cylinder { height 4 radius 0.850 }
+}
+
+Solid {
+  translation 2.519 0 9.840
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.550 }
+        }
+      ]
+    }
+  ]
+  name "tree_13"
+  boundingObject Cylinder { height 4 radius 0.550 }
+}
+
+Solid {
+  translation 29.031 0 6.630
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.550 }
+        }
+      ]
+    }
+  ]
+  name "tree_14"
+  boundingObject Cylinder { height 4 radius 0.550 }
+}
+
+Solid {
+  translation 27.246 0 2.883
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.700 }
+        }
+      ]
+    }
+  ]
+  name "tree_15"
+  boundingObject Cylinder { height 4 radius 0.700 }
+}
+
+Solid {
+  translation 29.433 0 17.173
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.700 }
+        }
+      ]
+    }
+  ]
+  name "tree_16"
+  boundingObject Cylinder { height 4 radius 0.700 }
+}
+
+Solid {
+  translation 6.578 0 17.226
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.550 }
+        }
+      ]
+    }
+  ]
+  name "tree_17"
+  boundingObject Cylinder { height 4 radius 0.550 }
+}
+
+Solid {
+  translation 2.516 0 32.752
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.850 }
+        }
+      ]
+    }
+  ]
+  name "tree_18"
+  boundingObject Cylinder { height 4 radius 0.850 }
+}
+
+Solid {
+  translation 13.145 0 33.470
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.550 }
+        }
+      ]
+    }
+  ]
+  name "tree_19"
+  boundingObject Cylinder { height 4 radius 0.550 }
+}
+
+Solid {
+  translation 9.056 0 37.354
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.850 }
+        }
+      ]
+    }
+  ]
+  name "tree_20"
+  boundingObject Cylinder { height 4 radius 0.850 }
+}
+
+Solid {
+  translation 8.899 0 7.895
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.550 }
+        }
+      ]
+    }
+  ]
+  name "tree_21"
+  boundingObject Cylinder { height 4 radius 0.550 }
+}
+
+Solid {
+  translation 31.123 0 11.232
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.550 }
+        }
+      ]
+    }
+  ]
+  name "tree_22"
+  boundingObject Cylinder { height 4 radius 0.550 }
+}
+
+Solid {
+  translation 8.047 0 24.514
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.850 }
+        }
+      ]
+    }
+  ]
+  name "tree_23"
+  boundingObject Cylinder { height 4 radius 0.850 }
+}
+
+Solid {
+  translation 36.701 0 6.924
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.700 }
+        }
+      ]
+    }
+  ]
+  name "tree_24"
+  boundingObject Cylinder { height 4 radius 0.700 }
+}
+
+Solid {
+  translation 20.768 0 35.640
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.40 0.26 0.13 }
+      }
+      geometry Cylinder { height 2.2 radius 0.12 }
+    }
+    Transform {
+      translation 0 2.6 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.18 0.45 0.22 }
+          }
+          geometry Sphere { radius 0.850 }
+        }
+      ]
+    }
+  ]
+  name "tree_25"
+  boundingObject Cylinder { height 4 radius 0.850 }
+}
+DEF SCOUT Robot {
+  translation 4.000 1.0 4.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.12 0.28 0.55 }
+      }
+      geometry Box { size 0.36 0.10 0.36 }
+    }
+    Lidar {
+      translation 0 0.08 0
+      name "lidar"
+      horizontalResolution 90
+      fieldOfView 6.28318
+      numberOfLayers 1
+      minRange 0.15
+      maxRange 12
+    }
+    RangeFinder {
+      translation 0.18 0.02 0
+      rotation 0 1 0 1.5708
+      name "depth"
+      fieldOfView 1.047
+      width 160
+      height 120
+      minRange 0.15
+      maxRange 12
+    }
+    GPS {
+      name "gps"
+    }
+    Compass {
+      name "compass"
+    }
+  ]
+  name "scout"
+  controller "avoid_controller"
+  supervisor TRUE
+}

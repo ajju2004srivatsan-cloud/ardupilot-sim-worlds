@@ -1,0 +1,164 @@
+#VRML_V7.0.0 utf8
+WorldInfo {
+  title "Indoor maze"
+  info [
+    "Same layout as the Python avoidance demo."
+  ]
+  basicTimeStep 32
+}
+Viewpoint {
+  orientation 1 0 0 -1.05
+  position 9.000 16.200 7.000
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Solid {
+  translation 9.000 0 7.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.78 0.80 0.84 }
+      }
+      geometry Box { size 18.000 0.04 14.000 }
+    }
+  ]
+  name "floor"
+  boundingObject Box { size 18.000 0.04 14.000 }
+}
+DEF GOAL Solid {
+  translation 15.000 0.04 12.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.15 0.65 0.25 }
+      }
+      geometry Cylinder { height 0.06 radius 0.35 }
+    }
+  ]
+  name "goal"
+}
+
+Solid {
+  translation 9.000 1.200 0.150
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.93 0.94 0.95 }
+      }
+      geometry Box { size 18.000 2.400 0.300 }
+    }
+  ]
+  name "wall_0"
+  boundingObject Box { size 18.000 2.400 0.300 }
+}
+
+Solid {
+  translation 9.000 1.200 13.850
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.93 0.94 0.95 }
+      }
+      geometry Box { size 18.000 2.400 0.300 }
+    }
+  ]
+  name "wall_1"
+  boundingObject Box { size 18.000 2.400 0.300 }
+}
+
+Solid {
+  translation 0.150 1.200 7.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.93 0.94 0.95 }
+      }
+      geometry Box { size 0.300 2.400 14.000 }
+    }
+  ]
+  name "wall_2"
+  boundingObject Box { size 0.300 2.400 14.000 }
+}
+
+Solid {
+  translation 17.850 1.200 7.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.93 0.94 0.95 }
+      }
+      geometry Box { size 0.300 2.400 14.000 }
+    }
+  ]
+  name "wall_3"
+  boundingObject Box { size 0.300 2.400 14.000 }
+}
+
+Solid {
+  translation 7.000 1.200 5.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.93 0.94 0.95 }
+      }
+      geometry Box { size 13.400 2.400 0.300 }
+    }
+  ]
+  name "wall_4"
+  boundingObject Box { size 13.400 2.400 0.300 }
+}
+
+Solid {
+  translation 11.200 1.200 9.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.93 0.94 0.95 }
+      }
+      geometry Box { size 13.000 2.400 0.300 }
+    }
+  ]
+  name "wall_5"
+  boundingObject Box { size 13.000 2.400 0.300 }
+}
+DEF SCOUT Robot {
+  translation 2.000 1.0 2.000
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.12 0.28 0.55 }
+      }
+      geometry Box { size 0.36 0.10 0.36 }
+    }
+    Lidar {
+      translation 0 0.08 0
+      name "lidar"
+      horizontalResolution 90
+      fieldOfView 6.28318
+      numberOfLayers 1
+      minRange 0.15
+      maxRange 12
+    }
+    RangeFinder {
+      translation 0.18 0.02 0
+      rotation 0 1 0 1.5708
+      name "depth"
+      fieldOfView 1.047
+      width 160
+      height 120
+      minRange 0.15
+      maxRange 12
+    }
+    GPS {
+      name "gps"
+    }
+    Compass {
+      name "compass"
+    }
+  ]
+  name "scout"
+  controller "avoid_controller"
+  supervisor TRUE
+}
